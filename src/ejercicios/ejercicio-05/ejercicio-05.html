@@ -5,20 +5,54 @@
   </head>
   <body>
     <h1>Ejercicio 5: Formularios</h1>
+
     <!-- Crea un formulario con el método "post" -->
+    <form action="#" method="post">
 
     <!-- Añade un campo de texto para el nombre con el atributo "name" establecido como "nombre" -->
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" required/>
+    <br />
 
     <!-- Añade un campo de texto para el correo electrónico con el atributo "name" establecido como "email" -->
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="email" required />
+    <br />
 
     <!-- Añade un campo de selección para la edad con el atributo "name" establecido como "edad" -->
+    <select name="edad">
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="30">30</option>
+    </select>
+    <br />
     
     <!-- Añade un campo de selección para el sexo con el atributo "name" establecido como "sexo" -->
+    <select name="sexo">
+      <option value="masculino">Masculino</option>
+      <option value="feminino">Feminino</option>
+    </select>
+    <br />
 
     <!-- Añade un campo de contraseña para la contraseña con el atributo "name" establecido como "contraseña" -->
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" id="contraseña" name="contraseña" required />
+    <br />
 
     <!-- Añade un campo de confirmación de contraseña para la confirmación de contraseña con el atributo "name" establecido como "confirmación de contraseña" -->
+    <input type="password" name="confirmación de contraseña" /><br />
+    <label for="confirm-password">Confirmar contraseña:</label>
+      <input
+        type="password"
+        id="confirm-password"
+        name="confirm-password"
+        minlength="8"
+        maxlength="20"
+        required
+      /><br /><br />
 
     <!-- Añade un botón de envío con el valor "Enviar" -->
+    <button type="submit">Enviar</button> 
   </body>
 </html>
